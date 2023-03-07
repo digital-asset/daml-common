@@ -11,7 +11,7 @@
 * TLS and access token utilities
 * self-service error codes
 * security evidencing
-* functional utilities such as non-empty monad
+* functional utilities such as non-empty wrapper
 
 ## Process
 
@@ -19,7 +19,7 @@
 Inclusion of a new library in the `daml-common` repository must be proposed through a GitHub issue. A valid submission should contain
 * the name of the library to be included
 * a github reference, in case the library already exists in one of the DA repositories
-* justification of why this library must be included and why existing libraries do serve the purpose at the moment
+* justification of why this library must be included and why existing libraries do not serve the purpose at the moment
 * applicability, i.e. which of the DA projects will benefit from the inclusion
 * migration strategy for the existing DA projects
 * a list of third party libraries that the new library will bring as a dependency
@@ -30,7 +30,7 @@ Inclusion of a new library in the `daml-common` repository must be proposed thro
 The inclusion of a new library is discussed on the GitHub issue. All DA engineering is invited to take part. In order to be considered conclusive a discussion must garner the attention of at least 5 engineers.
 
 ### Acceptance
-Special role in the process is given to the root code owners of this repository. They assume the role of the arbiters of the discussion surrounding inclusion of the new libraries. It does not mean that they have the authocratic power over the contents of the repository. It rather means that they are the gate keepers of the process that can asses that a sufficient consensus has been reached in the github issue discussion. Think of their role as akin to that shared by the speaker of the house of commons in the UK.
+Special role in the process is given to the root code owners of this repository. They assume the role of the arbiters of the discussion surrounding inclusion of the new libraries. It does not mean that they have the autocratic power over the contents of the repository. It rather means that they are the gate keepers of the process that can asses that a sufficient consensus has been reached in the github issue discussion. Think of their role as akin to that shared by the speaker of the house of commons in the UK.
 
 ### Seeding
 One of the root code owners creates a directory intended to contain the library and adjusts the CODEOWNERS file to list the designated maintainers.

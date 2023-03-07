@@ -41,7 +41,7 @@ The library is developed in the `daml-common` repository. This process must incl
 * providing documentation in form of a README file as well as documenting the code forming the library interface
 * adjusting the release definition to contain the new artifacts
 * adjusting the continuous integration to build, test and release the new library
-* adjusting the 3rd party libraru whitelist specifying the required dependencies
+* adjusting the 3rd party library whitelist specifying the required dependencies
 
 ## Quality
 

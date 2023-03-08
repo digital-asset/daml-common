@@ -2,7 +2,7 @@
 
 ## Goals
 
-`daml-common` is a set of base libraries developed in-house at DA that are meant for wide adoption across all DA products. By selecting a core set of "blessed" libraries we encourage a consistent experience for the development team as well as for the clients using our software. The types of libaries that we envisage will find their home in this repository include but are not limited to:
+`daml-common` is a set of base scala libraries developed in-house at DA that are meant for wide adoption across all DA products. By selecting a core set of "blessed" libraries we encourage a consistent experience for the development team as well as for the clients using our software. The types of libaries that we envisage will find their home in this repository include but are not limited to:
 
 * logging, metrics, tracing
 * resource management
@@ -43,6 +43,17 @@ The library is developed in the `daml-common` repository. This process must incl
 * adjusting the continuous integration to build, test and release the new library
 * adjusting the 3rd party library whitelist specifying the required dependencies
 
+The contributions to the libraries are conducted through standard merge PRs. It is the responsibility of the maintainers of the specific library to uphold the required quality standards.
+
+### Proposing changes
+Changes to the existing libraries can be suggested by raising an issue. A valid submission should contain
+* the name of the library to be modified
+* the description of the proposed change
+* applicability, i.e. which of the DA projects will benefit from the inclusion
+* migration strategy for the existing DA projects
+
+It is the responsibility of the library maintainers to respond to the proposal and to decide whether it is a modification worth pursuing or not.
+
 ## Quality
 
 The daml-common repository sets a very high bar on the quality of the libraries included. It should not become a dump of half-baked ideas or where circular dependencies are resolved for lack of a better place. All libraries must
@@ -52,3 +63,9 @@ The daml-common repository sets a very high bar on the quality of the libraries 
 * be sufficiently documented
 * follow standardized coding format
 * adhere to standardized compiler and wart remover flags
+
+## Releasing
+
+* The daml-common repository is not tied to the daml versioning cadence. It follows own semver numbering schema.
+* Artifacts will be released to maven. 
+* Projects consuming libraries contained in this repository can opt for either using the maven artifacts or for incorporating it as a git submodule.

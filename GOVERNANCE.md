@@ -66,6 +66,8 @@ The daml-common repository sets a very high bar on the quality of the libraries 
 
 ## Releasing
 
-* The daml-common repository is not tied to the daml versioning cadence. It follows own semver numbering schema.
-* Artifacts will be released to maven. 
+* A release can be requested by anyone by raising an issue.
+* A new release will be triggered by any of the maintainers or a person that a maintainer delegates to.
+* Artifacts will be released to maven, additionally sources will be available on a GH release.
+* The daml-common repository is not tied to the daml versioning cadence. It follows its own semver numbering schema.
 * Projects consuming libraries contained in this repository can opt for either using the maven artifacts or for incorporating it as a git submodule.
